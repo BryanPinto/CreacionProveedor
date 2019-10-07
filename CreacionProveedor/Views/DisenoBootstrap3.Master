@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="GENERATOR" content="Microsoft SharePoint">
 
-    <link href="<%: Url.Content("~/Styles/image/logo.png") %>" rel="icon" type="image/ico">
+    <%--<link href="<%: Url.Content("~/Styles/image/logo.png") %>" rel="icon" type="image/ico">--%>
     <link href="<%: Url.Content("~/Styles/css/estilo-template.css") %>" rel="stylesheet" type="text/css">
     <link href="<%: Url.Content("~/Styles/css/bootstrap.css") %>" rel="stylesheet" />
     <link href="<%: Url.Content("~/Styles/css/custom.css") %>" rel="stylesheet" />
@@ -23,7 +23,7 @@
     
     <link href="<%: Url.Content("~/Styles/css/jquery.ui.css") %>" rel="stylesheet" />
     <script src="<%: Url.Content("~/Styles/js/bootstrap-combobox.js?02052018") %>"></script>
-    <link rel="icon" type="image/png" href="http://200.68.17.69/alta_des/img/favicon.ico"><%--FAV ICON--%>
+    <link rel="icon" type="image/png" href="<%: Url.Content("~/Styles/image/logo.png") %>">
     <asp:ContentPlaceHolder ID="TitleContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -68,7 +68,7 @@ HEADER
                 </div>
             </nav>
         </div>--%>
-        <iframe id="iframe" style="width:100%;height:77px" src="http://lipigascl.server2.digitaria.cl/?sh=1"></iframe> 
+        
 
     </header>
     <!------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -97,7 +97,7 @@ FOOTER
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <footer>
         <div class="footer">
-            <iframe id="iframe" style="width:100%;height:508px" scrolling="no" src="http://lipigascl.server2.digitaria.cl/?sf=1"></iframe> 
+           
         </div>
     </footer>
     <!------------------------------------------------------------------------------------------------------------------------------------------------------------------

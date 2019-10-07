@@ -1,0 +1,10 @@
+Fecha;Hora;Proceso;Metodo;Mensaje
+"07-10-2019";"15:40";"Credenciales ingresadas";"Login";"Correo: vegasoledad@gmail.com, Clave: 123"
+"07-10-2019";"15:40";"Consultar credenciales";"Login";"<BizAgiWSParam>
+	                                    <EntityData>
+		                                    <EntityName>ContratistasOTMedidor</EntityName>
+		                                    <Filters>
+			                                    <![CDATA[CorreoElectronico = 'vegasoledad@gmail.com' AND Pass = '123']]>
+		                                    </Filters>
+	                                    </EntityData>
+                                    </BizAgiWSParam>"
