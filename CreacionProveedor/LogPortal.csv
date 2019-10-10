@@ -8,3 +8,231 @@ Fecha;Hora;Proceso;Metodo;Mensaje
 		                                    </Filters>
 	                                    </EntityData>
                                     </BizAgiWSParam>"
+"08-10-2019";"18:15";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"08-10-2019";"18:15";"Respuesta";"ListarParametrica";""
+"08-10-2019";"18:15";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"08-10-2019";"18:22";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"08-10-2019";"18:22";"Respuesta";"ListarParametrica";""
+"08-10-2019";"18:22";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"14:45";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"14:45";"Respuesta";"ListarParametrica";""
+"10-10-2019";"14:45";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"14:45";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"14:45";"Respuesta";"ListarParametrica";""
+"10-10-2019";"14:45";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"14:46";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"14:46";"Respuesta";"ListarParametrica";""
+"10-10-2019";"14:46";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"14:46";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"14:46";"Respuesta";"ListarParametrica";""
+"10-10-2019";"14:46";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"14:47";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"14:47";"Respuesta";"ListarParametrica";""
+"10-10-2019";"14:47";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"15:10";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"15:10";"Respuesta";"ListarParametrica";""
+"10-10-2019";"15:10";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:04";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:04";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:04";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:05";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:05";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:05";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:05";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:05";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:05";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:05";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:05";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:05";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:06";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:06";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:06";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:07";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:07";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:07";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:07";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:07";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:07";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:07";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:07";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:07";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:07";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:07";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:07";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:07";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:07";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:07";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"10-10-2019";"18:07";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"10-10-2019";"18:07";"Respuesta";"ListarParametrica";""
+"10-10-2019";"18:07";"ERROR";"ListarParametrica";"Falta el elemento raíz."

@@ -6,18 +6,18 @@
     <link href="<%: Url.Content("~/Styles/css/datatable.min.css") %>" rel="stylesheet" />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link href="<%: Url.Content("~/Styles/css/custom.css") %>" rel="stylesheet" />
-    <title>Formulario de ingreso</title>
+    <title>Entry Form</title>
     <script>
         $(document).ready(function () {
             $("#btnEnviar").click(function (e) {
                 e.preventDefault();
                 swal({
-                    title: "¿Estás seguro?",
-                    text: "Se ingresarán los datos al sistema.",
+                    title: "Are you sure?",
+                    text: "The data will be entered into the system.",
                     icon: "warning",
                     buttons: true,
                     successMode: true,
-                    buttons: ["Cancelar", "Confirmar"],
+                    buttons: ["Cancel", "Confirm"],
                 }).then((willDelete) =>
                     {
                     if (willDelete)
@@ -31,8 +31,8 @@
                         success: function (data)
                         {
                             swal({
-                            title: 'Ingreso exitoso',
-                            text: 'La información ha sido cargada al sistema',
+                            title: 'successful data entry',
+                            text: 'The information has been uploaded to the system',
                             icon: 'success'
                             }).then(function () {
                                 window.location.href = '<%: Url.Content("~/Home/SolicitudExitosa") %>';                     
@@ -41,43 +41,43 @@
                             }
                             else {
                                 md.modal("hide");
-                                swal("Error al ingresar la información", "Contacte a un administrador", "error");
+                                swal("Error entering information", "Contact an administrator", "error");
                             }
                         },
                         error: function () {
                             console.log("falló");
                             md.modal("hide");
-                            swal("Error de comunicación de datos", "Contacte a un administrador", "warning");
+                            swal("Data communication error", "Contact an administrator", "warning");
                         }
                         });
                     }
                     else
                     {
-                        swal("Se ha cancelado el ingreso de datos.");
+                        swal("Data entry has been canceled.");
                     }
                 });                                                                                     
             });
 
             // Cambiar mensajes por defecto
             jQuery.extend(jQuery.validator.messages, {
-                required: "Este campo es requerido.",
-                remote: "Este campo necesita corrección.",
-                email: "Ingrese un correo válido.",
-                url: "Ingrese una URL válida.",
-                date: "Ingrese una fecha válida.",
-                dateISO: "Ingrese una fecha válida.",
-                number: "Ingrese un número válido.",
-                digits: "Ingrese solo dígitos.",
-                creditcard: "Ingrese un tarjeta de crédito válida.",
-                equalTo: "Repita el mismo campo.",
-                accept: "Ingrese un archivo con una extensión válida (PDF, DOC, DOCX, JPG o PNG).",
-                extension: "Ingrese un archivo con una extensión válida (PDF, DOC, DOCX, JPG o PNG).",
-                maxlength: jQuery.validator.format("Ingrese hasta {0} caracteres."),
-                minlength: jQuery.validator.format("Ingrese mínimo {0} caracteres."),
-                rangelength: jQuery.validator.format("Ingrese un valor en un rango entre {0} y {1}."),
-                range: jQuery.validator.format("Ingrese un valor entre {0} y {1}."),
-                max: jQuery.validator.format("Ingrese un valor igual o menor a {0}."),
-                min: jQuery.validator.format("Ingrese un valor mayor o igual a {0}.")
+                required: "This field is required.",
+                remote: "This field needs correction.",
+                email: "Enter a valid email.",
+                url: "Enter a valid URL.",
+                date: "Enter a valid date.",
+                dateISO: "Enter a valid date.",
+                number: "Enter a valid number.",
+                digits: "Enter digits only.",
+                creditcard: "Enter a valid credit card.",
+                equalTo: "Repeat the same field.",
+                accept: "Enter a file with a valid extension (PDF, DOC, DOCX, JPG o PNG).",
+                extension: "Enter a file with a valid extension (PDF, DOC, DOCX, JPG o PNG).",
+                maxlength: jQuery.validator.format("Enter up to {0} characters."),
+                minlength: jQuery.validator.format("Enter minimum {0} characters."),
+                rangelength: jQuery.validator.format("Enter a value in a range between {0} and {1}."),
+                range: jQuery.validator.format("Enter a value between {0} and {1}."),
+                max: jQuery.validator.format("Enter a value equal to or less than {0}."),
+                min: jQuery.validator.format("Enter a value greater than or equal to {0}.")
             });
 
             //validar que se seleccione un tipo de proveedor
@@ -89,7 +89,7 @@
             //Validar que se seleccione un tipo de proveedor
             $.validator.addMethod("selectProveedor", function (value, element) {
                 return value !== "0";
-            }, "Seleccione un Tipo de proveedor");
+            }, "Select a Provider Type");
 
             //validar campos
              $("#formIndex").validate({
@@ -168,23 +168,23 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <%--FILTROS--%>
-    <h1 style="text-align:center;color:#393945;padding-bottom:15px">FICHA SOLICITUD DE CREACIÓN DE PROVEEDOR</h1>
+    <h1 style="text-align:center;color:#393945;padding-bottom:15px">SUPPLIER CREATION REQUEST FORM</h1>
     <div style="text-align:center">
-        <a href="<%: Url.Content("~/Home/IndexEnglish") %>" style="font-size:30px">Formulario ingles</a>
+        <a href="<%: Url.Content("~/Home/Index") %>" style="font-size:30px">Spanish form</a>
     </div>
 <form id="formIndex">
     <div class="panel panel-primary">
-        <div class="panel-heading">Datos generales del proveedor</div>
+        <div class="panel-heading">Supplier data</div>
         <div class="panel-body">
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtRazonSocialProveedor">Razón social</label>
+                    <label for="txtRazonSocialProveedor">Legal name</label>
                     <input type="text" class="form-control" id="txtRazonSocialProveedor" name="txtRazonSocialProveedor" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtDocTributarioProveedor">Documento tributario</label>
+                    <label for="txtDocTributarioProveedor">Currency</label>
                     <input type="text" class="form-control" id="txtDocTributarioProveedor" name="txtDocTributarioProveedor" />
                 </fieldset>                    
             </div>
@@ -192,11 +192,11 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtGiroProveedor">Giro</label>
+                    <label for="txtGiroProveedor">Industry</label>
                     <input type="text" class="form-control" id="txtGiroProveedor" name="txtGiroProveedor" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtSitioWebProveedor">Sitio web</label>
+                    <label for="txtSitioWebProveedor">Website</label>
                     <input type="text" class="form-control" id="txtSitioWebProveedor" name="txtSitioWebProveedor" />
                 </fieldset>                    
             </div>
@@ -204,40 +204,32 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtRutProveedor">RUT</label>
+                    <label for="txtRutProveedor">TAX ID</label>
                     <input type="text" class="form-control" id="txtRutProveedor" name="txtRutProveedor" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtTipoProveedor">Tipo de proveedor</label>
+                    <label for="txtTipoProveedor">Type of provider</label>
                     <select name="txtTipoProveedor" id="txtTipoProveedor" class="form-control">
-                        <option value="0">Seleccione opción</option>
+                        <option value="0">Select an option</option>
                         <%=ViewData["txtTipoProveedor"]%>
                     </select>
                 </fieldset>                    
-            </div>
-            <div class="row">
-                <fieldset class="form-group col-md-1">
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtDivisaProveedor">Divisa</label>
-                    <input type="text" class="form-control" id="txtDivisaProveedor" name="txtDivisaProveedor" />
-                </fieldset>                   
-            </div>
+            </div>            
         </div>
     </div>
 
     <div class="panel panel-primary">
-        <div class="panel-heading">Dirección</div>
+        <div class="panel-heading">Address</div>
         <div class="panel-body">
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCalleNumeroDirección">Calle y número</label>
+                    <label for="txtCalleNumeroDirección">Street and number</label>
                     <input type="text" class="form-control" id="txtCalleNumeroDirección" name="txtCalleNumeroDirección" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCodigoPostalDirección">Código postal</label>
+                    <label for="txtCodigoPostalDirección">Country</label>
                     <input type="text" class="form-control" id="txtCodigoPostalDirección" name="txtCodigoPostalDirección" />
                 </fieldset>                    
             </div>
@@ -245,11 +237,11 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtComunaCiudadDirección">Comuna y ciudad</label>
+                    <label for="txtComunaCiudadDirección">City</label>
                     <input type="text" class="form-control" id="txtComunaCiudadDirección" name="txtComunaCiudadDirección" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtRegionDirección">Región</label>
+                    <label for="txtRegionDirección">Postal code</label>
                     <input type="text" class="form-control" id="txtRegionDirección" name="txtRegionDirección" />
                 </fieldset>                    
             </div>            
@@ -257,17 +249,17 @@
     </div>
     
     <div class="panel panel-primary">
-        <div class="panel-heading">Información de contacto</div>
+        <div class="panel-heading">Contact info</div>
         <div class="panel-body">
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtNombreContacto">Nombre</label>
+                    <label for="txtNombreContacto">Name</label>
                     <input type="text" class="form-control" id="txtNombreContacto" name="txtNombreContacto" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtExtensionContacto">Extensión</label>
+                    <label for="txtExtensionContacto">Extension</label>
                     <input type="text" class="form-control" id="txtExtensionContacto" name="txtExtensionContacto" />
                 </fieldset>                    
             </div>
@@ -275,11 +267,11 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCargoContacto">Cargo</label>
+                    <label for="txtCargoContacto">Job position</label>
                     <input type="text" class="form-control" id="txtCargoContacto" name="txtCargoContacto" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCelularContacto">Celular</label>
+                    <label for="txtCelularContacto">Mobile</label>
                     <input type="text" class="form-control" id="txtCelularContacto" name="txtCelularContacto" />
                 </fieldset>                    
             </div>      
@@ -287,11 +279,11 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtTelefonoContacto">Teléfono fijo</label>
+                    <label for="txtTelefonoContacto">Phone</label>
                     <input type="text" class="form-control" id="txtTelefonoContacto" name="txtTelefonoContacto" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCorreoContacto">Correo eléctronico</label>
+                    <label for="txtCorreoContacto">E-mail</label>
                     <input type="text" class="form-control" id="txtCorreoContacto" name="txtCorreoContacto" />
                 </fieldset>                    
             </div>     
@@ -343,17 +335,17 @@
     </div>--%>
 
     <div class="panel panel-primary">
-        <div class="panel-heading">Documentación adicional a enviar</div>
+        <div class="panel-heading">Required documents to send</div>
         <div class="panel-body">
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCedulaRepresentante">Cédula de identidad representante legal</label>
+                    <label for="txtCedulaRepresentante">Business registration certificate</label>
                     <input type="file" class="form-control" id="txtCedulaRepresentante" name="txtCedulaRepresentante" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtRutEmpresaProveedora">RUT de la empresa proveedora</label>
+                    <label for="txtRutEmpresaProveedora">Bank certificate form issued by your bank. This should indicate Tax ID and company legal name</label>
                     <input type="file" class="form-control" id="txtRutEmpresaProveedora" name="txtRutEmpresaProveedora" />
                 </fieldset>                    
             </div>
@@ -361,21 +353,13 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCertificadoCuenta">Certificado de cuenta corriente</label>
+                    <label for="txtCertificadoCuenta">Dun & bradsteet or equivalent</label>
                     <input type="file" class="form-control" id="txtCertificadoCuenta" name="txtCertificadoCuenta" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtEscrituraEmpresa">Escritura de empresa</label>
+                    <label for="txtEscrituraEmpresa">Tax ID copy</label>
                     <input type="file" class="form-control" id="txtEscrituraEmpresa" name="txtEscrituraEmpresa" />
                 </fieldset>                    
-            </div>
-            <div class="row">
-                <fieldset class="form-group col-md-1">
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtDicom">DICOM</label>
-                    <input type="file" class="form-control" id="txtDicom" name="txtDicom" />
-                </fieldset>                   
             </div>
         </div>
     </div>
@@ -383,7 +367,7 @@
         <div class="panel-body" style="text-align:center">           
             <fieldset class="form-group col-md-12">
                 <div class="row">
-                    <button type="button" class="btn btn-primary btn-lg" id="btnEnviar">Enviar</button>                 
+                    <button type="button" class="btn btn-primary btn-lg" id="btnEnviar">Send</button>                 
                 </div>
             </fieldset> 
         </div>

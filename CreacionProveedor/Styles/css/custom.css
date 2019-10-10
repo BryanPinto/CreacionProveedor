@@ -284,6 +284,12 @@
 .panel-primary {
     border-color: #ff8300;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #ff8300;
+    border-color: #ff8300;
+}
 html {
     font-family: sans-serif;
 }

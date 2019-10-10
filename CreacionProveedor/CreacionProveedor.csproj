@@ -185,7 +185,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Controllers\ConversorBase64.cs" />
+    <Compile Include="Controllers\CrearProveedor.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Util.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -254,9 +256,11 @@
     <Content Include="Styles\js\newdatatables.min.js" />
     <Content Include="Styles\js\npm.js" />
     <Content Include="Styles\css\Style.css" />
+    <Content Include="Views\Home\Caducado.aspx" />
     <Content Include="Views\Home\Error404.aspx" />
+    <Content Include="Views\Home\IndexEnglish.aspx" />
     <Content Include="Views\Home\Index.aspx" />
-    <Content Include="Views\Home\Test.aspx" />
+    <Content Include="Views\Home\SolicitudExitosa.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
