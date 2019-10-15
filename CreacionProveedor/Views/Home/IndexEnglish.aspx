@@ -168,6 +168,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <%--FILTROS--%>
+    <img src="https://www.hunterdouglas.cl/cortinas/uploads/cl/logos/logo.png" alt="HunterDouglas" />
     <h1 style="text-align:center;color:#393945;padding-bottom:15px">SUPPLIER CREATION REQUEST FORM</h1>
     <div style="text-align:center">
         <a href="<%: Url.Content("~/Home/Index") %>" style="font-size:30px">Spanish form</a>

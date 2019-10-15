@@ -829,3 +829,100 @@ Fecha;Hora;Proceso;Metodo;Mensaje
                 "
 "15-10-2019";"14:39";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
 "15-10-2019";"14:39";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"15:27";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"15:27";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"15:27";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"15:29";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"15:29";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"15:29";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"15:30";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"15:30";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"15:30";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"15:30";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"15:30";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"15:30";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"15:30";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"15:30";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"15:30";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"15:30";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"15:30";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"15:30";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"15:35";"ERROR";"IngresarDatos";"El campo Tipo de proveedor no puede estar vacío"
+"15-10-2019";"15:45";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"15:45";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"15:45";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"16:05";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"16:05";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"16:05";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"

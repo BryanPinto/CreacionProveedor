@@ -21,11 +21,12 @@ namespace WebSolicitudes.Controllers
         // GET: /Home/
         public ActionResult Index()//COMO PARAMETRO DE ENTRADA DEBE VENIR EL LINK CIFRADO
         {
-            string respuestaCaso = string.Empty;            
+            string respuestaCaso = string.Empty;
             try
             {
                 ////Obtener ultimo parametro de la url de la página que será el link
-
+                //Base32.Net4.Encoder enco = new Base32.Net4.Encoder();
+                //string f = enco.DecodeFromBase32String();
                 ////Descifrar link
 
                 ////Obtener informacion del idCase, numero de caso (y id Entidad de la coleccion en caso de ser corrección)

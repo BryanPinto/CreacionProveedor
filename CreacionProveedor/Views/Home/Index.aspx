@@ -172,6 +172,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <%--FILTROS--%>
+    <img src="https://www.hunterdouglas.cl/cortinas/uploads/cl/logos/logo.png" alt="HunterDouglas" />
     <h1 style="text-align:center;color:#393945;padding-bottom:15px">FICHA SOLICITUD DE CREACIÓN DE PROVEEDOR</h1>
     <div style="text-align:center">
         <a href="<%: Url.Content("~/Home/IndexEnglish") %>" style="font-size:30px">Formulario ingles</a>
@@ -284,7 +285,7 @@
                 </fieldset>
                 <fieldset class="form-group col-md-5">
                     <label for="txtCelularContacto">Celular</label>
-                    <input type="text" class="form-control" id="txtCelularContacto" name="txtCelularContacto" />
+                    <input type="text" class="form-control" id="txtCelularContacto" name="txtCelularContacto" placeholder="+56 2X XXXXXXX"/>
                 </fieldset>                    
             </div>      
             <div class="row">
