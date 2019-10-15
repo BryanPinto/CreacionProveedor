@@ -99,7 +99,7 @@ namespace WebSolicitudes.Controllers
 
 
                 //Cargar tabla de tipo de proveedor
-                string listaTipoProveedor = Util.ListarParametrica("P_TipodeProveedor", "TipodeProveedor");
+                string listaTipoProveedor = UtilController.ListarParametrica("P_TipodeProveedor", "TipodeProveedor");
                 ViewData["txtTipoProveedor"] = listaTipoProveedor;
             }
             catch(Exception ex)

@@ -169,25 +169,25 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\BPMSEntity\Reference.cs">
+    <Compile Include="Connected Services\EntityManager\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\BPMSQuery\Reference.cs">
+    <Compile Include="Connected Services\QuerySoa\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\BPMSWorkflow\Reference.cs">
+    <Compile Include="Connected Services\WorkflowEngine\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Controllers\ConversorBase64.cs" />
-    <Compile Include="Controllers\CrearProveedor.cs" />
+    <Compile Include="Controllers\CrearProveedorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\Util.cs" />
+    <Compile Include="Controllers\UtilController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -197,24 +197,22 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <None Include="Connected Services\BPMSEntity\entitymanagersoa.wsdl" />
-    <None Include="Connected Services\BPMSQuery\querysoa.wsdl" />
-    <None Include="Connected Services\BPMSWorkflow\workflowenginesoa.wsdl" />
-    <None Include="Connected Services\BPMSWorkflow\configuration91.svcinfo" />
-    <None Include="Connected Services\BPMSWorkflow\configuration.svcinfo" />
-    <None Include="Connected Services\BPMSWorkflow\Reference.svcmap">
+    <None Include="Connected Services\EntityManager\configuration91.svcinfo" />
+    <None Include="Connected Services\EntityManager\configuration.svcinfo" />
+    <None Include="Connected Services\EntityManager\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\BPMSEntity\configuration91.svcinfo" />
-    <None Include="Connected Services\BPMSEntity\configuration.svcinfo" />
-    <None Include="Connected Services\BPMSEntity\Reference.svcmap">
+    <None Include="Connected Services\QuerySoa\querysoa.wsdl" />
+    <None Include="Connected Services\WorkflowEngine\configuration91.svcinfo" />
+    <None Include="Connected Services\WorkflowEngine\configuration.svcinfo" />
+    <None Include="Connected Services\WorkflowEngine\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\BPMSQuery\configuration91.svcinfo" />
-    <None Include="Connected Services\BPMSQuery\configuration.svcinfo" />
-    <None Include="Connected Services\BPMSQuery\Reference.svcmap">
+    <None Include="Connected Services\QuerySoa\configuration91.svcinfo" />
+    <None Include="Connected Services\QuerySoa\configuration.svcinfo" />
+    <None Include="Connected Services\QuerySoa\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -222,6 +220,8 @@
     <Content Include="Properties\DataSources\System.Xml.XmlNode.datasource" />
     <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <Content Include="Scripts\Additional-Validations.js" />
+    <None Include="Connected Services\EntityManager\entitymanagersoa.wsdl" />
+    <None Include="Connected Services\WorkflowEngine\workflowenginesoa.wsdl" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\bootstrap-toggle.min.js" />
@@ -305,9 +305,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\BPMSEntity\" />
-    <WCFMetadataStorage Include="Connected Services\BPMSQuery\" />
-    <WCFMetadataStorage Include="Connected Services\BPMSWorkflow\" />
+    <WCFMetadataStorage Include="Connected Services\EntityManager\" />
+    <WCFMetadataStorage Include="Connected Services\QuerySoa\" />
+    <WCFMetadataStorage Include="Connected Services\WorkflowEngine\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

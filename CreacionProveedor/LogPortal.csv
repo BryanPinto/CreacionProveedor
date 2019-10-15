@@ -236,3 +236,596 @@ Fecha;Hora;Proceso;Metodo;Mensaje
                 "
 "10-10-2019";"18:07";"Respuesta";"ListarParametrica";""
 "10-10-2019";"18:07";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"11-10-2019";"14:31";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"11-10-2019";"14:31";"Respuesta";"ListarParametrica";""
+"11-10-2019";"14:31";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"11-10-2019";"14:32";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"11-10-2019";"14:32";"Respuesta";"ListarParametrica";""
+"11-10-2019";"14:32";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"11-10-2019";"14:33";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"11-10-2019";"14:33";"Respuesta";"ListarParametrica";""
+"11-10-2019";"14:33";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"11-10-2019";"14:33";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"11-10-2019";"14:33";"Respuesta";"ListarParametrica";""
+"11-10-2019";"14:33";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"11-10-2019";"14:33";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"11-10-2019";"14:33";"Respuesta";"ListarParametrica";""
+"11-10-2019";"14:33";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"11-10-2019";"14:33";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"11-10-2019";"14:33";"Respuesta";"ListarParametrica";""
+"11-10-2019";"14:33";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"11-10-2019";"14:40";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"11-10-2019";"14:40";"Respuesta";"ListarParametrica";""
+"11-10-2019";"14:40";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"11-10-2019";"14:40";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"11-10-2019";"14:40";"Respuesta";"ListarParametrica";""
+"11-10-2019";"14:40";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"11-10-2019";"14:40";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"11-10-2019";"14:40";"Respuesta";"ListarParametrica";""
+"11-10-2019";"14:40";"ERROR";"ListarParametrica";"Falta el elemento raíz."
+"14-10-2019";"16:54";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"16:55";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"16:55";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"16:57";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"16:57";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"16:57";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"16:59";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"16:59";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"16:59";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"17:03";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"17:03";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"17:03";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"17:09";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"17:09";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"17:09";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"17:16";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"17:16";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"17:16";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"17:18";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"17:18";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"17:18";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"17:20";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"17:20";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"17:20";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"17:21";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"17:21";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"17:21";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"17:24";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"17:24";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"17:24";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"17:28";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"17:28";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"17:28";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"17:29";"ERROR";"IngresarDatos";"Número de caso sin especificicar"
+"14-10-2019";"17:31";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"14-10-2019";"17:31";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"14-10-2019";"17:31";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"14-10-2019";"17:34";"XML actualizar";"IngresarDatos";"<BizAgiWSParam>
+                                                    <domain>domain</domain>
+                                                    <userName>admon</userName>
+                                                    <ActivityData>
+                                                        <radNumber>101</radNumber>
+                                                        <taskName>Event_3</taskName>
+                                                    </ActivityData>
+                                                    <Entities>
+                                                        <M_ProcesoCreacionDeProve businessKey="NumerodeCaso='101'">
+                                                            <SolicitudCreaciondeProve>
+                                                                    <DatosProveedor>
+                                                                        <RazonSocial>Razón</RazonSocial>
+                                                                        <DocumentoTributario>Documento</DocumentoTributario>
+                                                                        <Giro>Giro</Giro>
+                                                                        <SitioWeb>Sitio</SitioWeb>
+                                                                        <Rut>RUT</Rut>
+                                                                        <TipodeProveedor>1</TipodeProveedor>
+                                                                        <Divisa>Divisa</Divisa>
+                                                                        <CalleyNumero>Calle</CalleyNumero>
+                                                                        <CodigoPostal>342432</CodigoPostal>
+                                                                        <ComunayCiudad>Comuna</ComunayCiudad>
+                                                                        <Region>Región</Region>
+                                                                        <Nombre>Nombre</Nombre>
+                                                                        <Extension>Extensión</Extension>
+                                                                        <Cargo>Cargo</Cargo>
+                                                                        <Celular>54654654</Celular>
+                                                                        <TelefonoFijo>546456</TelefonoFijo>
+                                                                        <CorreoElectronico>correo@correo.cl</CorreoElectronico>
+                                                                    </DatosProveedor>
+                                                                    <DocumentosAdjuntos>
+                                                                        <CIRepresentanteLegal></CIRepresentanteLegal>
+                                                                        <RUTempresaproveedora></RUTempresaproveedora>
+                                                                        <CertificadoCuentaCorriente></CertificadoCuentaCorriente>
+                                                                        <EscrituradeEmpresa></EscrituradeEmpresa>
+                                                                        <DICOM></DICOM>
+                                                                    </DocumentosAdjuntos>
+                                                            </SolicitudCreaciondeProve>
+                                                        <CompletadoWeb>true</CompletadoWeb>
+                                                        </M_ProcesoCreacionDeProve>
+                                                    </Entities>
+                                               </BizAgiWSParam>"
+"14-10-2019";"17:34";"Respuesta actualizar";"IngresarDatos";"<?xml version="1.0" encoding="utf-8"?><process xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><processId>0</processId><processCreationDate>0001-01-01T00:00:00</processCreationDate><processSolutionDate>0001-01-01T00:00:00</processSolutionDate><processError><errorCode>1</errorCode><errorMessage>Task name:'Event_3' not found.</errorMessage></processError><CurrentWorkItems /></process>"
+"14-10-2019";"17:36";"XML actualizar";"IngresarDatos";"<BizAgiWSParam>
+                                                    <domain>domain</domain>
+                                                    <userName>admon</userName>
+                                                    <ActivityData>
+                                                        <radNumber>101</radNumber>
+                                                        <taskName>Event3</taskName>
+                                                    </ActivityData>
+                                                    <Entities>
+                                                        <M_ProcesoCreacionDeProve businessKey="NumerodeCaso='101'">
+                                                            <SolicitudCreaciondeProve>
+                                                                    <DatosProveedor>
+                                                                        <RazonSocial>Razón</RazonSocial>
+                                                                        <DocumentoTributario>Documento</DocumentoTributario>
+                                                                        <Giro>Giro</Giro>
+                                                                        <SitioWeb>Sitio</SitioWeb>
+                                                                        <Rut>RUT</Rut>
+                                                                        <TipodeProveedor>1</TipodeProveedor>
+                                                                        <Divisa>Divisa</Divisa>
+                                                                        <CalleyNumero>Calle</CalleyNumero>
+                                                                        <CodigoPostal>342432</CodigoPostal>
+                                                                        <ComunayCiudad>Comuna</ComunayCiudad>
+                                                                        <Region>Región</Region>
+                                                                        <Nombre>Nombre</Nombre>
+                                                                        <Extension>Extensión</Extension>
+                                                                        <Cargo>Cargo</Cargo>
+                                                                        <Celular>54654654</Celular>
+                                                                        <TelefonoFijo>546456</TelefonoFijo>
+                                                                        <CorreoElectronico>correo@correo.cl</CorreoElectronico>
+                                                                    </DatosProveedor>
+                                                                    <DocumentosAdjuntos>
+                                                                        <CIRepresentanteLegal></CIRepresentanteLegal>
+                                                                        <RUTempresaproveedora></RUTempresaproveedora>
+                                                                        <CertificadoCuentaCorriente></CertificadoCuentaCorriente>
+                                                                        <EscrituradeEmpresa></EscrituradeEmpresa>
+                                                                        <DICOM></DICOM>
+                                                                    </DocumentosAdjuntos>
+                                                            </SolicitudCreaciondeProve>
+                                                        <CompletadoWeb>true</CompletadoWeb>
+                                                        </M_ProcesoCreacionDeProve>
+                                                    </Entities>
+                                               </BizAgiWSParam>"
+"14-10-2019";"17:40";"Respuesta actualizar";"IngresarDatos";"<?xml version="1.0" encoding="utf-8"?><process xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><processId>0</processId><processCreationDate>0001-01-01T00:00:00</processCreationDate><processSolutionDate>0001-01-01T00:00:00</processSolutionDate><processError><errorCode>1</errorCode><errorMessage>Task name:'Event3' not found.</errorMessage></processError><CurrentWorkItems /></process>"
+"14-10-2019";"17:40";"XML actualizar";"IngresarDatos";"<BizAgiWSParam>
+                                                    <domain>domain</domain>
+                                                    <userName>admon</userName>
+                                                    <ActivityData>
+                                                        <radNumber>101</radNumber>
+                                                        <taskName>Event_3</taskName>
+                                                    </ActivityData>
+                                                    <Entities>
+                                                        <M_ProcesoCreacionDeProve businessKey="NumerodeCaso='101'">
+                                                            <SolicitudCreaciondeProve>
+                                                                    <DatosProveedor>
+                                                                        <RazonSocial>Razón</RazonSocial>
+                                                                        <DocumentoTributario>Documento</DocumentoTributario>
+                                                                        <Giro>Giro</Giro>
+                                                                        <SitioWeb>Sitio</SitioWeb>
+                                                                        <Rut>RUT</Rut>
+                                                                        <TipodeProveedor>1</TipodeProveedor>
+                                                                        <Divisa>Divisa</Divisa>
+                                                                        <CalleyNumero>Calle</CalleyNumero>
+                                                                        <CodigoPostal>342432</CodigoPostal>
+                                                                        <ComunayCiudad>Comuna</ComunayCiudad>
+                                                                        <Region>Región</Region>
+                                                                        <Nombre>Nombre</Nombre>
+                                                                        <Extension>Extensión</Extension>
+                                                                        <Cargo>Cargo</Cargo>
+                                                                        <Celular>54654654</Celular>
+                                                                        <TelefonoFijo>546456</TelefonoFijo>
+                                                                        <CorreoElectronico>correo@correo.cl</CorreoElectronico>
+                                                                    </DatosProveedor>
+                                                                    <DocumentosAdjuntos>
+                                                                        <CIRepresentanteLegal></CIRepresentanteLegal>
+                                                                        <RUTempresaproveedora></RUTempresaproveedora>
+                                                                        <CertificadoCuentaCorriente></CertificadoCuentaCorriente>
+                                                                        <EscrituradeEmpresa></EscrituradeEmpresa>
+                                                                        <DICOM></DICOM>
+                                                                    </DocumentosAdjuntos>
+                                                            </SolicitudCreaciondeProve>
+                                                        <CompletadoWeb>true</CompletadoWeb>
+                                                        </M_ProcesoCreacionDeProve>
+                                                    </Entities>
+                                               </BizAgiWSParam>"
+"14-10-2019";"17:40";"Respuesta actualizar";"IngresarDatos";"<?xml version="1.0" encoding="utf-8"?><process xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><processId>101</processId><caseGuid>fe2be65e-3e40-42d5-963d-4e07e964b509</caseGuid><processRadNumber>101</processRadNumber><savedMessage><Entities></Entities></savedMessage><processCreationDate>2019-10-08T18:45:03.117</processCreationDate><processSolutionDate>2019-10-08T18:45:03.117</processSolutionDate><processWorkflowClass><workflowClassId>1</workflowClassId><workflowClassName>CreacionDeProveedor</workflowClassName><workflowClassDisplayName>Creación de Proveedor</workflowClassDisplayName><workflowClassDescription /><workflowClassHelpText /><workflowClassHelpURL /><workflowClassDisplayOrder>1</workflowClassDisplayOrder><workflowClassCreationDate>2019-10-02T16:13:21</workflowClassCreationDate><workflowClassGlobalForm>00000000-0000-0000-0000-000000000000</workflowClassGlobalForm><workflowClassAllocationPrinciple>FIFO</workflowClassAllocationPrinciple><workflowClassProcessType>Process</workflowClassProcessType><workflowClassDisplay>true</workflowClassDisplay><workflowClassUseParentRadicationNumber>true</workflowClassUseParentRadicationNumber><workflowClassSupportsScopes>true</workflowClassSupportsScopes><caseAccessType>Public</caseAccessType><guidWfClass>cea8b5d8-39fa-4e6d-b098-a85d707922ba</guidWfClass></processWorkflowClass><processError><errorCode /><errorMessage /></processError><CurrentWorkItems><workItem><workItemId>306</workItemId><workItemState>Inactive</workItemState><workItemEntryDate>2019-10-14T17:38:17</workItemEntryDate><workItemDuration>0</workItemDuration><workItemSubprocesses /><workItemEstimatedSolutionDate>2027-06-01T00:00:00</workItemEstimatedSolutionDate><workItemSolutionDate>0001-01-01T00:00:00</workItemSolutionDate><task><taskId>17</taskId><taskName>Event_3</taskName><taskDisplayName>Esperar Antecedentes</taskDisplayName><taskDescription /><taskHelpText /><taskEstimatedDuration>0</taskEstimatedDuration><taskType>Event</taskType><taskCost>0</taskCost><taskPriority>Normal</taskPriority><taskTransactional>false</taskTransactional><taskCompensation>false</taskCompensation><taskTimerEventDuration>0</taskTimerEventDuration><AllowsReassign>false</AllowsReassign><SendNotification>false</SendNotification><SendAlarms>false</SendAlarms><ExtendedEstimatedDuration>0</ExtendedEstimatedDuration><Form>00000000-0000-0000-0000-000000000000</Form><IsAsynchTask>false</IsAsynchTask><NumberOfRetries>0</NumberOfRetries><RetryInterval>0</RetryInterval><ShowFeedback>false</ShowFeedback><TimeoutSeconds>600</TimeoutSeconds><Guid>ef932f04-d8e0-47ac-8f23-a81d3b41b522</Guid><tskMobileAccess>true</tskMobileAccess><tskMessageAfterProcess /><allowReleaseActivity>false</allowReleaseActivity><IdActivity>00000000-0000-0000-0000-000000000000</IdActivity><AllowEditionActivity>false</AllowEditionActivity><IdAdhocTask xsi:nil="true" /></task><Guid>15f40fb9-25f6-40e7-8247-1683e5813558</Guid></workItem><workItem><workItemId>307</workItemId><workItemState>Inactive</workItemState><workItemEntryDate>2019-10-14T17:38:17</workItemEntryDate><workItemDuration>0</workItemDuration><workItemSubprocesses /><workItemEstimatedSolutionDate>2019-10-14T17:38:17.967</workItemEstimatedSolutionDate><workItemSolutionDate>0001-01-01T00:00:00</workItemSolutionDate><task><taskId>15</taskId><taskName>Event_4</taskName><taskDisplayName>Espera respuesta proveedor</taskDisplayName><taskDescription /><taskHelpText /><taskEstimatedDuration>0</taskEstimatedDuration><taskType>Wait</taskType><taskCost>0</taskCost><taskPriority>Normal</taskPriority><taskTransactional>false</taskTransactional><taskCompensation>false</taskCompensation><taskTimerEventDuration>0</taskTimerEventDuration><AllowsReassign>false</AllowsReassign><SendNotification>false</SendNotification><SendAlarms>false</SendAlarms><ExtendedEstimatedDuration>0</ExtendedEstimatedDuration><Form>00000000-0000-0000-0000-000000000000</Form><IsAsynchTask>false</IsAsynchTask><NumberOfRetries>0</NumberOfRetries><RetryInterval>0</RetryInterval><ShowFeedback>false</ShowFeedback><TimeoutSeconds>600</TimeoutSeconds><Guid>69990445-3651-4875-99e3-b6d3859a9304</Guid><tskMobileAccess>true</tskMobileAccess><tskMessageAfterProcess /><allowReleaseActivity>false</allowReleaseActivity><IdActivity>00000000-0000-0000-0000-000000000000</IdActivity><AllowEditionActivity>false</AllowEditionActivity><IdAdhocTask xsi:nil="true" /></task><Guid>0600f22d-f557-4445-a940-827c046ac693</Guid></workItem></CurrentWorkItems></process>"
+"15-10-2019";"12:32";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"12:32";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"12:32";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"12:34";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"12:34";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"12:34";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"12:37";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"12:37";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"12:37";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"12:41";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"12:41";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"12:41";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"12:41";"ERROR";"IngresarDatos";"El campo Tipo de proveedor no puede estar vacío"
+"15-10-2019";"12:42";"ERROR";"IngresarDatos";"El campo Tipo de proveedor no puede estar vacío"
+"15-10-2019";"12:47";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"12:47";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"12:47";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"12:49";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"12:49";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"12:49";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:12";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:12";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:12";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:15";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:15";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:15";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:17";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:17";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:17";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:17";"ERROR";"IngresarDatos";"El campo Tipo de proveedor no puede estar vacío"
+"15-10-2019";"14:23";"ERROR";"IngresarDatos";"El campo Tipo de proveedor no puede estar vacío"
+"15-10-2019";"14:29";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:29";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:29";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:31";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:31";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:31";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:32";"ERROR";"IngresarDatos";"El campo Tipo de proveedor no puede estar vacío"
+"15-10-2019";"14:32";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:32";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:32";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:33";"ERROR";"IngresarDatos";"El campo Tipo de proveedor no puede estar vacío"
+"15-10-2019";"14:33";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:33";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:33";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:34";"ERROR";"IngresarDatos";"El campo Tipo de proveedor no puede estar vacío"
+"15-10-2019";"14:34";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:34";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:34";"ERROR";"IngresarDatos";"El campo Tipo de proveedor no puede estar vacío"
+"15-10-2019";"14:34";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:34";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:34";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:34";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:34";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:34";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:36";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:36";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:36";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"
+"15-10-2019";"14:39";"Listar motivo/submotivo";"ListarParametrica";"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>P_TipodeProveedor</EntityName>
+                            <Filters>
+                                <![CDATA[dsblP_TipodeProveedor = False]]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>
+                "
+"15-10-2019";"14:39";"Respuesta";"ListarParametrica";"<?xml version="1.0" encoding="utf-8"?><BizAgiWSResponse><Entities><P_TipodeProveedor key="1"><TipodeProveedor>test1</TipodeProveedor><Codigo>1</Codigo></P_TipodeProveedor><P_TipodeProveedor key="2"><TipodeProveedor>test2</TipodeProveedor><Codigo>2</Codigo></P_TipodeProveedor></Entities></BizAgiWSResponse>"
+"15-10-2019";"14:39";"Lista opciones generada";"ListarParametrica";"<option value='1'>test1</option><option value='2'>test2</option>"

@@ -23,18 +23,13 @@
                     if (willDelete)
                     {                  
                         var md = $("#processing-modal");
-                        md.modal("show");
+                    md.modal("show");
                     $.ajax({
                         url: '<%: Url.Content("~/CrearProveedor/IngresarDatos/") %>',
                         data: $("#formIndex").serialize(),
                         type: "POST",
-                        enctype: "multipart/form-data",
-                        contentType: false,
-                        cache: false,
-                        processData:false,
                         success: function (data)
                         {
-                            md.modal("hide");
                             swal({
                             title: 'Ingreso exitoso',
                             text: 'La información ha sido cargada al sistema',
@@ -50,6 +45,7 @@
                             }
                         },
                         error: function () {
+                            console.log("falló");
                             md.modal("hide");
                             swal("Error de comunicación de datos", "Contacte a un administrador", "warning");
                         }
@@ -164,7 +160,7 @@
                       }
                   }
             });
-            $("#txtCelularContacto", "#txtTelefonoContacto", "#txtCodigoPostalDirección").numeric("{ negative : false , decimalPlaces : 0 , decimal : ',' }");
+            $("#txtCelularContacto, #txtTelefonoContacto, #txtCodigoPostalDirección").numeric("{ negative : false , decimalPlaces : 0 , decimal : ',' }");
         });
     </script>
 </asp:Content>
@@ -176,7 +172,7 @@
     <div style="text-align:center">
         <a href="<%: Url.Content("~/Home/IndexEnglish") %>" style="font-size:30px">Formulario ingles</a>
     </div>
-<form id="formIndex" enctype="multipart/form-data" method="post">
+<form id="formIndex">
     <div class="panel panel-primary">
         <div class="panel-heading">Datos generales del proveedor</div>
         <div class="panel-body">
@@ -302,6 +298,50 @@
         </div>
     </div>
 
+    <%--<div class="panel panel-primary">
+        <div class="panel-heading">Condición de compra</div>
+        <div class="panel-body">
+            <div class="row">
+                <fieldset class="form-group col-md-1">
+                </fieldset>
+                <fieldset class="form-group col-md-5">
+                    <label for="txtCondicionPagoCompra">Condiciones de pago</label>
+                    <input type="text" class="form-control" id="txtCondicionPagoCompra" name="txtCondicionPagoCompra" />
+                </fieldset>
+                <fieldset class="form-group col-md-5">
+                    <label for="txtCondicionEntregaCompra">Condiciones de entrega</label>
+                    <input type="text" class="form-control" id="txtCondicionEntregaCompra" name="txtCondicionEntregaCompra" />
+                </fieldset>                    
+            </div>
+            <div class="row">
+                <fieldset class="form-group col-md-1">
+                </fieldset>
+                <fieldset class="form-group col-md-5">
+                    <label for="txtModoEntregaCompra">Modo de entrega</label>
+                    <input type="text" class="form-control" id="txtModoEntregaCompra" name="txtModoEntregaCompra" />
+                </fieldset>                   
+            </div>
+        </div>
+    </div>--%>
+
+    <%--<div class="panel panel-primary">
+        <div class="panel-heading">Datos bancarios</div>
+        <div class="panel-body">
+            <div class="row">
+                <fieldset class="form-group col-md-1">
+                </fieldset>
+                <fieldset class="form-group col-md-5">
+                    <label for="txtBanco">Banco</label>
+                    <input type="text" class="form-control" id="txtBanco" name="txtBanco" />
+                </fieldset>
+                <fieldset class="form-group col-md-5">
+                    <label for="txtNumCuentaBanco">N° cuenta corriente</label>
+                    <input type="text" class="form-control" id="txtNumCuentaBanco" name="txtNumCuentaBanco" />
+                </fieldset>                    
+            </div>            
+        </div>
+    </div>--%>
+
     <div class="panel panel-primary">
         <div class="panel-heading">Documentación adicional a enviar</div>
         <div class="panel-body">
@@ -340,21 +380,13 @@
         </div>
     </div>
 
-    <div class="panel-body" style="text-align:right">           
-        <fieldset class="form-group col-md-12">
-            <div class="row">
-                <label>Cualquier duda contactarse con: compraslogistica.chi@hdlao.com</label>               
-            </div>
-        </fieldset> 
-    </div>
-
-    <div class="panel-body" style="text-align:center">           
-        <fieldset class="form-group col-md-12">
-            <div class="row">
-                <button type="button" class="btn btn-primary btn-lg" id="btnEnviar">Enviar</button>                 
-            </div>
-        </fieldset> 
-    </div>
+        <div class="panel-body" style="text-align:center">           
+            <fieldset class="form-group col-md-12">
+                <div class="row">
+                    <button type="button" class="btn btn-primary btn-lg" id="btnEnviar">Enviar</button>                 
+                </div>
+            </fieldset> 
+        </div>
 
 </form>
 
@@ -364,7 +396,7 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="text-center">
-                    <img src="../Styles/css/gif-load.gif" class="icon" id="gif" />
+                    <img src="../Styles/css/gif-load.gif" class="icon" />
                     <h3>Realizando ingreso de datos</h3>
                 </div>
             </div>
