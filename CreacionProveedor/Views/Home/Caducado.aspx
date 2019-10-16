@@ -18,7 +18,7 @@
 <img src="https://www.hunterdouglas.cl/cortinas/uploads/cl/logos/logo.png" alt="HunterDouglas" /><br />
     <br /> <br /> <br /> 
 <h1 style="text-align:center;color:#393945;padding-bottom:15px;font-size:50px">PÁGINA NO DISPONIBLE</h1>
-<h2 style="text-align:center;color:#393945;padding-bottom:16px">El tiempo de espera para la solicitud expiró. Cualquier duda contactarse con: compraslogistica.chi@hdlao.com</h2>
+<h2 style="text-align:center;color:#393945;padding-bottom:49px">Cualquier duda contactarse con: compraslogistica.chi@hdlao.com</h2>
 <div style="text-align:center">
     <img src="<%: Url.Content("~/Styles/image/reloj.png") %>"/>
 </div>

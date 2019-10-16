@@ -9,6 +9,26 @@
     <title>Formulario de ingreso</title>
     <script>
         $(document).ready(function () {
+           console.log("urlvalida:"+"<%= ViewData["UrlValida"] %>");
+            if ("<%= ViewData["UrlValida"] %>" == "1") {
+                console.log("2");
+                $(function () {
+                    console.log("3");
+                    $.post('<%: Url.Content("~/Home/UrlValida/") %>',
+                        { value: '0' }, function (data) {
+                            console.log("4");
+                            console.log("Estado " + data.estado);
+                            //cambiar valor
+                            sessionStorage.setItem('UrlValida', data.estado);
+                            console.log("5");
+                        });
+                });
+            }
+            else {
+                console.log("6");
+                window.location.href = '<%: Url.Content("~/Home/Caducado") %>'; 
+            }
+
             $("#btnEnviar").click(function (e) {
                 e.preventDefault();
                 swal({
@@ -23,13 +43,18 @@
                     if (willDelete)
                     {                  
                         var md = $("#processing-modal");
-                    md.modal("show");
+                        md.modal("show");
                     $.ajax({
                         url: '<%: Url.Content("~/CrearProveedor/IngresarDatos/") %>',
                         data: $("#formIndex").serialize(),
                         type: "POST",
+                        enctype: "multipart/form-data",
+                        contentType: false,
+                        cache: false,
+                        processData:false,
                         success: function (data)
                         {
+                            md.modal("hide");
                             swal({
                             title: 'Ingreso exitoso',
                             text: 'La información ha sido cargada al sistema',
@@ -45,7 +70,6 @@
                             }
                         },
                         error: function () {
-                            console.log("falló");
                             md.modal("hide");
                             swal("Error de comunicación de datos", "Contacte a un administrador", "warning");
                         }
@@ -58,109 +82,109 @@
                 });                                                                                     
             });
 
-            // Cambiar mensajes por defecto
-            jQuery.extend(jQuery.validator.messages, {
-                required: "Este campo es requerido.",
-                remote: "Este campo necesita corrección.",
-                email: "Ingrese un correo válido.",
-                url: "Ingrese una URL válida.",
-                date: "Ingrese una fecha válida.",
-                dateISO: "Ingrese una fecha válida.",
-                number: "Ingrese un número válido.",
-                digits: "Ingrese solo dígitos.",
-                creditcard: "Ingrese un tarjeta de crédito válida.",
-                equalTo: "Repita el mismo campo.",
-                accept: "Ingrese un archivo con una extensión válida (PDF, DOC, DOCX, JPG o PNG).",
-                extension: "Ingrese un archivo con una extensión válida (PDF, DOC, DOCX, JPG o PNG).",
-                maxlength: jQuery.validator.format("Ingrese hasta {0} caracteres."),
-                minlength: jQuery.validator.format("Ingrese mínimo {0} caracteres."),
-                rangelength: jQuery.validator.format("Ingrese un valor en un rango entre {0} y {1}."),
-                range: jQuery.validator.format("Ingrese un valor entre {0} y {1}."),
-                max: jQuery.validator.format("Ingrese un valor igual o menor a {0}."),
-                min: jQuery.validator.format("Ingrese un valor mayor o igual a {0}.")
-            });
+            //// Cambiar mensajes por defecto
+            //jQuery.extend(jQuery.validator.messages, {
+            //    required: "Este campo es requerido.",
+            //    remote: "Este campo necesita corrección.",
+            //    email: "Ingrese un correo válido.",
+            //    url: "Ingrese una URL válida.",
+            //    date: "Ingrese una fecha válida.",
+            //    dateISO: "Ingrese una fecha válida.",
+            //    number: "Ingrese un número válido.",
+            //    digits: "Ingrese solo dígitos.",
+            //    creditcard: "Ingrese un tarjeta de crédito válida.",
+            //    equalTo: "Repita el mismo campo.",
+            //    accept: "Ingrese un archivo con una extensión válida (PDF, DOC, DOCX, JPG o PNG).",
+            //    extension: "Ingrese un archivo con una extensión válida (PDF, DOC, DOCX, JPG o PNG).",
+            //    maxlength: jQuery.validator.format("Ingrese hasta {0} caracteres."),
+            //    minlength: jQuery.validator.format("Ingrese mínimo {0} caracteres."),
+            //    rangelength: jQuery.validator.format("Ingrese un valor en un rango entre {0} y {1}."),
+            //    range: jQuery.validator.format("Ingrese un valor entre {0} y {1}."),
+            //    max: jQuery.validator.format("Ingrese un valor igual o menor a {0}."),
+            //    min: jQuery.validator.format("Ingrese un valor mayor o igual a {0}.")
+            //});
 
-            //validar que se seleccione un tipo de proveedor
-            $("#txtTipoProveedor").rules("add", {
-                required: true,
-                selectProveedor: true
-            });
+            ////validar que se seleccione un tipo de proveedor
+            //$("#txtTipoProveedor").rules("add", {
+            //    required: true,
+            //    selectProveedor: true
+            //});
 
-            //Validar que se seleccione un tipo de proveedor
-            $.validator.addMethod("selectProveedor", function (value, element) {
-                return value !== "0";
-            }, "Seleccione un Tipo de proveedor");
+            ////Validar que se seleccione un tipo de proveedor
+            //$.validator.addMethod("selectProveedor", function (value, element) {
+            //    return value !== "0";
+            //}, "Seleccione un Tipo de proveedor");
 
-            //validar campos
-             $("#formIndex").validate({
-                    //ignore: ":disabled",
-                    rules: {                        
-                    txtRazonSocialProveedor: {
-                        required: true
-                      },
-                      txtDocTributarioProveedor: {
-                        required: true
-                      },
-                      txtGiroProveedor: {
-                        required: true
-                      },
-                      txtSitioWebProveedor: {
-                        required: true
-                      },
-                      txtRutProveedor: {
-                        required: true
-                      },
-                      txtDivisaProveedor: {
-                        required: true
-                      },
-                      txtCalleNumeroDirección: {
-                          required: true
-                      },
-                      txtCodigoPostalDirección: {
-                        required: true
-                      },
-                      txtComunaCiudadDirección: {
-                        required: true
-                      },
-                      txtRegionDirección: {
-                        required: true
-                      },
-                      txtNombreContacto: {
-                        required: true
-                      },                      
-                      txtExtensionContacto: {
-                        required: true
-                      },                     
-                      txtCargoContacto: {
-                        required: true
-                      },
-                      txtCelularContacto: {
-                        required: true
-                      },
-                      txtTelefonoContacto: {
-                        required: true
-                      },
-                      txtCorreoContacto: {
-                        required: true
-                      },
-                      txtCedulaRepresentante: {
-                        required: true
-                      },
-                      txtRutEmpresaProveedora: {
-                        required: true
-                      },
-                      txtCertificadoCuenta: {
-                        required: true
-                      },
-                      txtEscrituraEmpresa: {
-                        required: true
-                      },
-                      txtDicom: {
-                        required: true
-                      }
-                  }
-            });
-            $("#txtCelularContacto, #txtTelefonoContacto, #txtCodigoPostalDirección").numeric("{ negative : false , decimalPlaces : 0 , decimal : ',' }");
+            ////validar campos
+            // $("#formIndex").validate({
+            //        //ignore: ":disabled",
+            //        rules: {                        
+            //        txtRazonSocialProveedor: {
+            //            required: true
+            //          },
+            //          txtDocTributarioProveedor: {
+            //            required: true
+            //          },
+            //          txtGiroProveedor: {
+            //            required: true
+            //          },
+            //          txtSitioWebProveedor: {
+            //            required: true
+            //          },
+            //          txtRutProveedor: {
+            //            required: true
+            //          },
+            //          txtDivisaProveedor: {
+            //            required: true
+            //          },
+            //          txtCalleNumeroDirección: {
+            //              required: true
+            //          },
+            //          txtCodigoPostalDirección: {
+            //            required: true
+            //          },
+            //          txtComunaCiudadDirección: {
+            //            required: true
+            //          },
+            //          txtRegionDirección: {
+            //            required: true
+            //          },
+            //          txtNombreContacto: {
+            //            required: true
+            //          },                      
+            //          txtExtensionContacto: {
+            //            required: true
+            //          },                     
+            //          txtCargoContacto: {
+            //            required: true
+            //          },
+            //          txtCelularContacto: {
+            //            required: true
+            //          },
+            //          txtTelefonoContacto: {
+            //            required: true
+            //          },
+            //          txtCorreoContacto: {
+            //            required: true
+            //          },
+            //          txtCedulaRepresentante: {
+            //            required: true
+            //          },
+            //          txtRutEmpresaProveedora: {
+            //            required: true
+            //          },
+            //          txtCertificadoCuenta: {
+            //            required: true
+            //          },
+            //          txtEscrituraEmpresa: {
+            //            required: true
+            //          },
+            //          txtDicom: {
+            //            required: true
+            //          }
+            //      }
+            //});
+            //$("#txtCelularContacto", "#txtTelefonoContacto", "#txtCodigoPostalDirección").numeric("{ negative : false , decimalPlaces : 0 , decimal : ',' }");
         });
     </script>
 </asp:Content>
@@ -168,11 +192,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <%--FILTROS--%>
+    <img src="https://www.hunterdouglas.cl/cortinas/uploads/cl/logos/logo.png" alt="HunterDouglas" />
     <h1 style="text-align:center;color:#393945;padding-bottom:15px">FICHA SOLICITUD DE CREACIÓN DE PROVEEDOR</h1>
     <div style="text-align:center">
         <a href="<%: Url.Content("~/Home/IndexEnglish") %>" style="font-size:30px">Formulario ingles</a>
     </div>
-<form id="formIndex">
+<form id="formIndex" enctype="multipart/form-data" method="post">
     <div class="panel panel-primary">
         <div class="panel-heading">Datos generales del proveedor</div>
         <div class="panel-body">
@@ -207,22 +232,25 @@
                     <label for="txtRutProveedor">RUT</label>
                     <input type="text" class="form-control" id="txtRutProveedor" name="txtRutProveedor" />
                 </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtTipoProveedor">Tipo de proveedor</label>
-                    <select name="txtTipoProveedor" id="txtTipoProveedor" class="form-control">
+                    <fieldset class="form-group col-md-5">
+                    <label for="txtMoneda">Moneda</label>
+                    <select name="txtMoneda" id="txtMoneda" class="form-control">
                         <option value="0">Seleccione opción</option>
-                        <%=ViewData["txtTipoProveedor"]%>
+                        <%=ViewData["txtMoneda"]%>
                     </select>
-                </fieldset>                    
+                </fieldset>                     
             </div>
-            <div class="row">
+            <%--<div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtDivisaProveedor">Divisa</label>
-                    <input type="text" class="form-control" id="txtDivisaProveedor" name="txtDivisaProveedor" />
+                    <label for="txtMoneda">Moneda</label>
+                    <select name="txtMoneda" id="txtMoneda" class="form-control">
+                        <option value="0">Seleccione opción</option>
+                        <%=ViewData["txtMoneda"]%>
+                    </select>
                 </fieldset>                   
-            </div>
+            </div>--%>
         </div>
     </div>
 
@@ -245,8 +273,8 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtComunaCiudadDirección">Comuna y ciudad</label>
-                    <input type="text" class="form-control" id="txtComunaCiudadDirección" name="txtComunaCiudadDirección" />
+                    <label for="txtCiudad">Ciudad</label>
+                    <input type="text" class="form-control" id="txtCiudad" name="txtCiudad" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
                     <label for="txtRegionDirección">Región</label>
@@ -280,7 +308,7 @@
                 </fieldset>
                 <fieldset class="form-group col-md-5">
                     <label for="txtCelularContacto">Celular</label>
-                    <input type="text" class="form-control" id="txtCelularContacto" name="txtCelularContacto" />
+                    <input type="text" class="form-control" id="txtCelularContacto" name="txtCelularContacto" placeholder="+56 9 23940015"/>
                 </fieldset>                    
             </div>      
             <div class="row">
@@ -288,7 +316,7 @@
                 </fieldset>
                 <fieldset class="form-group col-md-5">
                     <label for="txtTelefonoContacto">Teléfono fijo</label>
-                    <input type="text" class="form-control" id="txtTelefonoContacto" name="txtTelefonoContacto" />
+                    <input type="text" class="form-control" id="txtTelefonoContacto" name="txtTelefonoContacto"  placeholder="+56 22 3940015"/>
                 </fieldset>
                 <fieldset class="form-group col-md-5">
                     <label for="txtCorreoContacto">Correo eléctronico</label>
@@ -297,50 +325,6 @@
             </div>     
         </div>
     </div>
-
-    <%--<div class="panel panel-primary">
-        <div class="panel-heading">Condición de compra</div>
-        <div class="panel-body">
-            <div class="row">
-                <fieldset class="form-group col-md-1">
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtCondicionPagoCompra">Condiciones de pago</label>
-                    <input type="text" class="form-control" id="txtCondicionPagoCompra" name="txtCondicionPagoCompra" />
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtCondicionEntregaCompra">Condiciones de entrega</label>
-                    <input type="text" class="form-control" id="txtCondicionEntregaCompra" name="txtCondicionEntregaCompra" />
-                </fieldset>                    
-            </div>
-            <div class="row">
-                <fieldset class="form-group col-md-1">
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtModoEntregaCompra">Modo de entrega</label>
-                    <input type="text" class="form-control" id="txtModoEntregaCompra" name="txtModoEntregaCompra" />
-                </fieldset>                   
-            </div>
-        </div>
-    </div>--%>
-
-    <%--<div class="panel panel-primary">
-        <div class="panel-heading">Datos bancarios</div>
-        <div class="panel-body">
-            <div class="row">
-                <fieldset class="form-group col-md-1">
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtBanco">Banco</label>
-                    <input type="text" class="form-control" id="txtBanco" name="txtBanco" />
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtNumCuentaBanco">N° cuenta corriente</label>
-                    <input type="text" class="form-control" id="txtNumCuentaBanco" name="txtNumCuentaBanco" />
-                </fieldset>                    
-            </div>            
-        </div>
-    </div>--%>
 
     <div class="panel panel-primary">
         <div class="panel-heading">Documentación adicional a enviar</div>
@@ -380,13 +364,21 @@
         </div>
     </div>
 
-        <div class="panel-body" style="text-align:center">           
-            <fieldset class="form-group col-md-12">
-                <div class="row">
-                    <button type="button" class="btn btn-primary btn-lg" id="btnEnviar">Enviar</button>                 
-                </div>
-            </fieldset> 
-        </div>
+    <div class="panel-body" style="text-align:right">           
+        <fieldset class="form-group col-md-12">
+            <div class="row">
+                <label>Cualquier duda contactarse con: compraslogistica.chi@hdlao.com</label>               
+            </div>
+        </fieldset> 
+    </div>
+
+    <div class="panel-body" style="text-align:center">           
+        <fieldset class="form-group col-md-12">
+            <div class="row">
+                <button type="button" class="btn btn-primary btn-lg" id="btnEnviar">Enviar</button>                 
+            </div>
+        </fieldset> 
+    </div>
 
 </form>
 
@@ -396,7 +388,7 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="text-center">
-                    <img src="../Styles/css/gif-load.gif" class="icon" />
+                    <img src="../Styles/css/gif-load.gif" class="icon" id="gif" />
                     <h3>Realizando ingreso de datos</h3>
                 </div>
             </div>

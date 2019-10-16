@@ -226,26 +226,34 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtStreetAndNumber">Street and number</label>
-                    <input type="text" class="form-control" id="txtStreetAndNumber" name="txtStreetAndNumber" />
+                    <label for="txtStreet">Street</label>
+                    <input type="text" class="form-control" id="txtStreet" name="txtStreet" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCountry">Country</label>
-                    <input type="text" class="form-control" id="txtCountry" name="txtCountry" />
-                </fieldset>                    
+                    <label for="txtNumber">Number</label>
+                    <input type="text" class="form-control" id="txtNumber" name="txtNumber" />
+                </fieldset>                                   
             </div>
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
+                    <label for="txtCountry">Country</label>
+                    <input type="text" class="form-control" id="txtCountry" name="txtCountry" />
+                </fieldset> 
+                <fieldset class="form-group col-md-5">
                     <label for="txtCity">City</label>
                     <input type="text" class="form-control" id="txtCity" name="txtCity" />
+                </fieldset>                                 
+            </div> 
+             <div class="row">
+                <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
                     <label for="txtPostalCode">Postal code</label>
                     <input type="text" class="form-control" id="txtPostalCode" name="txtPostalCode" />
-                </fieldset>                    
-            </div>            
+                </fieldset>                               
+            </div> 
         </div>
     </div>
     
@@ -273,7 +281,7 @@
                 </fieldset>
                 <fieldset class="form-group col-md-5">
                     <label for="txtMobile">Mobile</label>
-                    <input type="text" class="form-control" id="txtMobile" name="txtMobile" />
+                    <input type="text" class="form-control" id="txtMobile" name="txtMobile" placeholder="+1-212-324-4152"/>
                 </fieldset>                    
             </div>      
             <div class="row">

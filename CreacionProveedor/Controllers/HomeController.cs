@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -19,96 +20,156 @@ namespace WebSolicitudes.Controllers
     {
         //
         // GET: /Home/
-        public ActionResult Index()//COMO PARAMETRO DE ENTRADA DEBE VENIR EL LINK CIFRADO
+        public ActionResult Index()
         {
             string respuestaCaso = string.Empty;
+            //string datosJSON = string.Empty;
             try
             {
                 ////Obtener ultimo parametro de la url de la página que será el link
-                //Base32.Net4.Encoder enco = new Base32.Net4.Encoder();
-                //string f = enco.DecodeFromBase32String();
+                string hola = "https://10.2.0.230/CreacionProveedor/PMRE45LNMVZG6ZDFINQXG3ZCHIRCANJTEARCYITJMRBWC43FEI5CEIBVGMQCELBCMR2XEYLDNFXW4TDJNZVSEORCEAYTAIBCFQRGMZLDNBQUOZLOMVZGCY3JN5XCEORCEBKHKZJAJ5RXIIBRGUQDAMB2GAYDUMBQEBKVIQZNGQQDEMBRHEQCELBCNFSFG33MNFRWS5DVMQRDUIRAGUZSAIT5";
+                //string[] url = Request.Url.Query.Split('/');
+                string[] url = hola.Split('/');
+                string linkEncriptado = url.Last();
                 ////Descifrar link
 
-                ////Obtener informacion del idCase, numero de caso (y id Entidad de la coleccion en caso de ser corrección)
+                Base32.Net4.Encoder enco = new Base32.Net4.Encoder();
+                string decodificado = enco.DecodeFromBase32String(linkEncriptado);
+                //datosJSON = JsonConvert.SerializeObject(decodificado);
+                var datosJSON = JObject.Parse(decodificado);
+                var numeroCaso = datosJSON["NumerodeCaso"].ToString();
+                if(numeroCaso != null && numeroCaso != "")
+                {
+                    numeroCaso = numeroCaso.Trim();
 
-                //var idCase = 0;
-                //// XML Búsqueda
-                //string xmlGetEntities = @"
-                //    <BizAgiWSParam>
-                //        <EntityData>
-                //            <EntityName>M_ProcesoCreacionDeProve</EntityName>
-                //            <Filters>
-                //                <![CDATA[idCase = " + idCase + @"]]>
-                //            </Filters>
-                //        </EntityData>
-                //    </BizAgiWSParam>";
+                    System.Web.HttpContext.Current.Session["NroCaso"] = numeroCaso;
 
-                ////Escribir log CSV
-                //Util.EscribirLog("Consultar id de caso", "Index", xmlGetEntities);
-                ////Fin CSV
+                    //Escribir log CSV
+                    UtilController.EscribirLog("Numero de caso obtenido", "Index", numeroCaso);
+                    //Fin CSV
 
-                //// Abrir conexión a servicio web
-                //var servicioQuery = "";//DesEntity.EntityManagerSOASoapClient servicioQuery = new DesEntity.EntityManagerSOASoapClient();
+                    ////Obtener informacion del idCase, numero de caso (y id Entidad de la coleccion en caso de ser corrección)
 
-                //respuestaCaso = servicioQuery.getEntitiesAsString(xmlGetEntities);
-                //respuestaCaso = respuestaCaso.Replace("\n", "");
-                //respuestaCaso = respuestaCaso.Replace("\t", "");
-                //respuestaCaso = respuestaCaso.Replace("\r", "");
+                    // XML Búsqueda
+                    string xmlGetEntities = @"
+                    <BizAgiWSParam>
+                        <EntityData>
+                            <EntityName>M_ProcesoCreacionDeProve</EntityName>
+                            <Filters>
+                                <![CDATA[NumerodeCaso = '" + numeroCaso + @"']]>
+                            </Filters>
+                        </EntityData>
+                    </BizAgiWSParam>";
 
-                ////Escribir log CSV
-                //Util.EscribirLog("respuestaCaso", "Index", respuestaCaso);
-                ////Fin CSV
+                    //Escribir log CSV
+                    UtilController.EscribirLog("Consultar numero de caso", "Index", xmlGetEntities);
+                    //Fin CSV
 
-                ////Transformar respuesta STRING de Bizagi a XML para poder recorrer los nodos
-                //XmlDocument doc = new XmlDocument();
-                //doc.LoadXml(respuestaCaso);
+                    // Abrir conexión a servicio web
+                    EntityManager.EntityManagerSOASoapClient servicioQuery = new EntityManager.EntityManagerSOASoapClient();
 
-                //string numeroCaso = "";
-                //string idEntidadSolicitud = "";
-                //var fechaGeneracionLink = "";//VERIFICAR ESTA FECHA Y LA OBTENCION EN EL XML
-                //string duracionLink = "";
-                //var fechaActual = DateTime.Today;
-                //var resultadoFechas = "";
+                    respuestaCaso = servicioQuery.getEntitiesAsString(xmlGetEntities);
+                    respuestaCaso = respuestaCaso.Replace("\n", "");
+                    respuestaCaso = respuestaCaso.Replace("\t", "");
+                    respuestaCaso = respuestaCaso.Replace("\r", "");
 
-                ////Guardar "fecha generacion link", "duracion de link", idEntidadSolicitud, numeroCaso y declarar la fecha actual
-                //if (doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/NumerodeCaso").InnerText != null)
-                //{
-                //    numeroCaso = doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/NumerodeCaso").InnerText;
-                //    System.Web.HttpContext.Current.Session["NroCaso"] = numeroCaso;
-                //}
-                ////REVISAR SI PUEDO OBTENER ASI LA KEY O HACERLO DE OTRA MANERA
-                //if (doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/SolicitudCreaciondeProve").InnerText != null)
-                //{
-                //    idEntidadSolicitud = doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/SolicitudCreaciondeProve").InnerText;
-                //}
-                //if (doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/Fechageneracionlink").InnerText != null)
-                //{
-                //    fechaGeneracionLink = doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/Fechageneracionlink").InnerText;
-                //    Convert.ToDateTime(fechaGeneracionLink);
-                //}
-                //if (doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/Diasduracionlink").InnerText != null)
-                //{
-                //    duracionLink = doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/Diasduracionlink").InnerText;
-                //}
+                    //Escribir log CSV
+                    UtilController.EscribirLog("respuestaCaso", "Index", respuestaCaso);
+                    //Fin CSV
 
-                ////Restar la fecha actual con la fecha generacion de link y los dias que de resultado, comparar con duracion de link, asi determinar si es válido o no.
-                //resultadoFechas = fechaActual - fechaGeneracionLink;
+                    //Transformar respuesta STRING de Bizagi a XML para poder recorrer los nodos
+                    XmlDocument doc = new XmlDocument();
+                    doc.LoadXml(respuestaCaso);
 
-                ////Si es valido retornar la vista del Index(formulario). Si no es valido, retornar a página de expiracion
+                    var idEntidadSolicitud = "";
+                    var fechaGeneracionLink = "";
+                    var duracionLink = "";
+                    DateTime fechaActual = DateTime.Today;
+                    string completadoWeb = "";
+                    string idioma = "";
 
+                    //Guardar "fecha generacion link", "duracion de link", idEntidadSolicitud, numeroCaso y declarar la fecha actual
+                    if (doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/Fechageneracionlink").InnerText != null)
+                    {
+                        fechaGeneracionLink = doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/Fechageneracionlink").InnerText;
+                    }
+                    if (doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/Diasduracionlink").InnerText != null)
+                    {
+                        duracionLink = doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/Diasduracionlink").InnerText;                        
+                    }
+                    if (doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/CompletadoWeb").InnerText != null)
+                    {
+                        completadoWeb = doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/CompletadoWeb").InnerText;
+                    }
+                    if (doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/SolicitudCreaciondeProve.Idioma.Idioma").InnerText != null)
+                    {
+                        idioma = doc.SelectSingleNode("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/SolicitudCreaciondeProve.Idioma.Idioma").InnerText;
+                    }
+                    foreach (XmlNode item in doc.SelectNodes("/BizAgiWSResponse/Entities/M_ProcesoCreacionDeProve/SolicitudCreaciondeProve"))
+                    {
+                        // Obtener campos
+                        idEntidadSolicitud = item.Attributes["key"].Value;
+                        Convert.ToInt32(idEntidadSolicitud);
+                    }
 
-
-
-                //Cargar tabla de tipo de proveedor
-                string listaTipoProveedor = UtilController.ListarParametrica("P_TipodeProveedor", "TipodeProveedor");
-                ViewData["txtTipoProveedor"] = listaTipoProveedor;
+                    //Restar la fecha actual con la fecha generacion de link y los dias que de resultado, comparar con duracion de link, asi determinar si es válido o no.
+                    TimeSpan resultadoFechas = fechaActual.Subtract(Convert.ToDateTime(fechaGeneracionLink));
+                    int diasDiferencia = resultadoFechas.Days;
+                    if (completadoWeb != "True")
+                    {
+                        //Paginas español. CREAR CONDICION EVALUANDO CAMPO DE IDIOMA ELEGIDO
+                        if (idioma == "Español")
+                        {
+                            if (Convert.ToInt32(duracionLink) >= diasDiferencia)
+                            {
+                                //mostrar index
+                                System.Web.HttpContext.Current.Session["UrlValida"] = "1";
+                                ViewData["UrlValida"] = System.Web.HttpContext.Current.Session["UrlValida"];
+                            }
+                            else
+                            {
+                                throw new Exception("Página caducada");
+                            }
+                        }
+                        else if(idioma == "Ingles")
+                        {
+                            if (Convert.ToInt32(duracionLink) >= diasDiferencia)
+                            {
+                                //mostrar index
+                                System.Web.HttpContext.Current.Session["UrlValida"] = "1";
+                                ViewData["UrlValida"] = System.Web.HttpContext.Current.Session["UrlValida"];
+                            }
+                            else
+                            {
+                                throw new Exception("Página caducada");
+                            }
+                        }
+                        //Paginas ingles
+                    }
+                    else
+                    {
+                        throw new Exception("Página ya fue completada. Se redirecciona a página caducada");
+                    }
+                    
+                    //Cargar tabla de tipo de proveedor
+                    string listaTipoProveedor = UtilController.ListarParametrica("P_Moneda", "Moneda");
+                    ViewData["txtMoneda"] = listaTipoProveedor;
+                }
             }
             catch(Exception ex)
             {
                 return RedirectToAction("Caducado", "Home");
             }
+            //ViewData["UrlValida"] = "1";
             return View();
         }
+
+        //public ActionResult UrlValida(string value)
+        //{
+        //    System.Web.HttpContext.Current.Session["UrlValida"] = value;
+        //    ViewData["UrlValida"] = "0";
+        //    return this.Json(new { estado = '0' });
+        //}
 
         public ActionResult Caducado()
         {

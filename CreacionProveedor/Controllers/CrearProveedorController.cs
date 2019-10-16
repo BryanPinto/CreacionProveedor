@@ -56,19 +56,14 @@ namespace WebSolicitudes.Controllers
                         rutProveedor = rutProveedor.Trim();
                     }
 
-                    var tipoProveedor = collection["txtTipoProveedor"];
-                    //Obtener id del tipoProveedor seleccionado
-                    int convertTipoProveedor = Convert.ToInt32(tipoProveedor);
-                    if (convertTipoProveedor == 0)
+                    var moneda = collection["txtMoneda"];
+                    //Obtener id del Moneda seleccionado
+                    int convertMoneda = Convert.ToInt32(moneda);
+                    if (convertMoneda == 0)
                     {
-                        throw new Exception("El campo Tipo de proveedor no puede estar vacío");
+                        throw new Exception("El campo Moneda no puede estar vacío");
                     }
-
-                    var divisaProveedor = collection["txtDivisaProveedor"];
-                    if (divisaProveedor != null && divisaProveedor != "")
-                    {
-                        divisaProveedor = divisaProveedor.Trim();
-                    }
+                    
 
                     var calleNumero = collection["txtCalleNumeroDirección"];
                     if (calleNumero != null && calleNumero != "")
@@ -84,10 +79,10 @@ namespace WebSolicitudes.Controllers
                         convertCodigoPostal = Convert.ToInt32(codigoPostal);
                     }
                     
-                    var comunaCiudad = collection["txtComunaCiudadDirección"];
-                    if (comunaCiudad != null && comunaCiudad != "")
+                    var ciudad = collection["txtCiudad"];
+                    if (ciudad != null && ciudad != "")
                     {
-                        comunaCiudad = comunaCiudad.Trim();
+                        ciudad = ciudad.Trim();
                     }
 
                     var region = collection["txtRegionDirección"];
@@ -118,16 +113,12 @@ namespace WebSolicitudes.Controllers
                     if (celularContacto != null && celularContacto != "")
                     {
                         celularContacto = celularContacto.Trim();
-                        //convertir codigoPostal a entero
-                        convertCelular = Convert.ToInt32(celularContacto);
                     }
 
                     var telefonoContacto = collection["txtTelefonoContacto"];
                     if (telefonoContacto != null && telefonoContacto != "")
                     {
                         telefonoContacto = telefonoContacto.Trim();
-                        //convertir codigoPostal a entero
-                        convertTelefono = Convert.ToInt32(telefonoContacto);
                     }
 
                     var correoContacto = collection["txtCorreoContacto"];
@@ -202,17 +193,16 @@ namespace WebSolicitudes.Controllers
                                                                         <Giro>" + giroProveedor + @"</Giro>
                                                                         <SitioWeb>" + sitioWeb + @"</SitioWeb>
                                                                         <Rut>" + rutProveedor + @"</Rut>
-                                                                        <TipodeProveedor>" + convertTipoProveedor + @"</TipodeProveedor>
-                                                                        <Divisa>" + divisaProveedor + @"</Divisa>
+                                                                        <Moneda>" + convertMoneda + @"</Moneda>
                                                                         <CalleyNumero>" + calleNumero + @"</CalleyNumero>
                                                                         <CodigoPostal>" + convertCodigoPostal + @"</CodigoPostal>
-                                                                        <ComunayCiudad>" + comunaCiudad + @"</ComunayCiudad>
+                                                                        <Ciudad>" + ciudad + @"</Ciudad>
                                                                         <Region>" + region + @"</Region>
                                                                         <Nombre>" + nombreContacto + @"</Nombre>
                                                                         <Extension>" + extContacto + @"</Extension>
                                                                         <Cargo>" + cargoContacto + @"</Cargo>
-                                                                        <Celular>" + convertCelular + @"</Celular>
-                                                                        <TelefonoFijo>" + convertTelefono + @"</TelefonoFijo>
+                                                                        <Celular>" + celularContacto + @"</Celular>
+                                                                        <TelefonoFijo>" + telefonoContacto + @"</TelefonoFijo>
                                                                         <CorreoElectronico>" + correoContacto + @"</CorreoElectronico>
                                                                     </DatosProveedor>
                                                                     <DocumentosAdjuntos>
@@ -323,10 +313,15 @@ namespace WebSolicitudes.Controllers
                         throw new Exception("The Provider Type field cannot be empty");
                     }
 
-                    var streetNumber = collection["txtStreetAndNumber"];
-                    if (streetNumber != null && streetNumber != "")
+                    var street = collection["txtStreet"];
+                    if (street != null && street != "")
                     {
-                        streetNumber = streetNumber.Trim();
+                        street = street.Trim();
+                    }
+                    var number = collection["txtNumber"];
+                    if (number != null && number != "")
+                    {
+                        number = number.Trim();
                     }
 
                     var country = collection["txtCountry"];
@@ -412,7 +407,8 @@ namespace WebSolicitudes.Controllers
                                                                         <SitioWeb>" + webSite + @"</SitioWeb>
                                                                         <TAXID>" + convertTaxId + @"</TAXID>
                                                                         <TipodeProveedor>" + convertTypeProvider + @"</TipodeProveedor>
-                                                                        <CalleyNumero>" + streetNumber + @"</CalleyNumero>
+                                                                        <Street>" + street + @"</Street>
+                                                                        <Numberaddress>" + number + @"</Numberaddress>
                                                                         <Country>" + country + @"</Country>
                                                                         <ComunayCiudad>" + city + @"</ComunayCiudad>
                                                                         <CodigoPostal>" + convertPostalCode + @"</CodigoPostal>

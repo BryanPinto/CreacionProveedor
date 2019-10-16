@@ -25,7 +25,7 @@
                         var md = $("#processing-modal");
                     md.modal("show");
                     $.ajax({
-                        url: '<%: Url.Content("~/CrearProveedor/IngresarDatos/") %>',
+                        url: '<%: Url.Content("~/CrearProveedor/IngresarDatosIngles/") %>',
                         data: $("#formIndex").serialize(),
                         type: "POST",
                         success: function (data)
@@ -168,6 +168,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <%--FILTROS--%>
+    <img src="https://www.hunterdouglas.cl/cortinas/uploads/cl/logos/logo.png" alt="HunterDouglas" />
     <h1 style="text-align:center;color:#393945;padding-bottom:15px">SUPPLIER CREATION REQUEST FORM</h1>
     <div style="text-align:center">
         <a href="<%: Url.Content("~/Home/Index") %>" style="font-size:30px">Spanish form</a>
@@ -180,36 +181,36 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtRazonSocialProveedor">Legal name</label>
-                    <input type="text" class="form-control" id="txtRazonSocialProveedor" name="txtRazonSocialProveedor" />
+                    <label for="txtLegalName">Legal name</label>
+                    <input type="text" class="form-control" id="txtLegalName" name="txtLegalName" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtDocTributarioProveedor">Currency</label>
-                    <input type="text" class="form-control" id="txtDocTributarioProveedor" name="txtDocTributarioProveedor" />
+                    <label for="txtCurrency">Currency</label>
+                    <input type="text" class="form-control" id="txtCurrency" name="txtCurrency" />
                 </fieldset>                    
             </div>
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtGiroProveedor">Industry</label>
-                    <input type="text" class="form-control" id="txtGiroProveedor" name="txtGiroProveedor" />
+                    <label for="txtIndustry">Industry</label>
+                    <input type="text" class="form-control" id="txtIndustry" name="txtIndustry" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtSitioWebProveedor">Website</label>
-                    <input type="text" class="form-control" id="txtSitioWebProveedor" name="txtSitioWebProveedor" />
+                    <label for="txtWebsite">Website</label>
+                    <input type="text" class="form-control" id="txtWebsite" name="txtWebsite" />
                 </fieldset>                    
             </div>
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtRutProveedor">TAX ID</label>
-                    <input type="text" class="form-control" id="txtRutProveedor" name="txtRutProveedor" />
+                    <label for="txtTaxId">TAX ID</label>
+                    <input type="text" class="form-control" id="txtTaxId" name="txtTaxId" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtTipoProveedor">Type of provider</label>
-                    <select name="txtTipoProveedor" id="txtTipoProveedor" class="form-control">
+                    <label for="txtTypeOfProvider">Type of provider</label>
+                    <select name="txtTypeOfProvider" id="txtTypeOfProvider" class="form-control">
                         <option value="0">Select an option</option>
                         <%=ViewData["txtTipoProveedor"]%>
                     </select>
@@ -225,26 +226,34 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCalleNumeroDirección">Street and number</label>
-                    <input type="text" class="form-control" id="txtCalleNumeroDirección" name="txtCalleNumeroDirección" />
+                    <label for="txtStreet">Street</label>
+                    <input type="text" class="form-control" id="txtStreet" name="txtStreet" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCodigoPostalDirección">Country</label>
-                    <input type="text" class="form-control" id="txtCodigoPostalDirección" name="txtCodigoPostalDirección" />
-                </fieldset>                    
+                    <label for="txtNumber">Number</label>
+                    <input type="text" class="form-control" id="txtNumber" name="txtNumber" />
+                </fieldset>                                   
             </div>
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtComunaCiudadDirección">City</label>
-                    <input type="text" class="form-control" id="txtComunaCiudadDirección" name="txtComunaCiudadDirección" />
+                    <label for="txtCountry">Country</label>
+                    <input type="text" class="form-control" id="txtCountry" name="txtCountry" />
+                </fieldset> 
+                <fieldset class="form-group col-md-5">
+                    <label for="txtCity">City</label>
+                    <input type="text" class="form-control" id="txtCity" name="txtCity" />
+                </fieldset>                                 
+            </div> 
+             <div class="row">
+                <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtRegionDirección">Postal code</label>
-                    <input type="text" class="form-control" id="txtRegionDirección" name="txtRegionDirección" />
-                </fieldset>                    
-            </div>            
+                    <label for="txtPostalCode">Postal code</label>
+                    <input type="text" class="form-control" id="txtPostalCode" name="txtPostalCode" />
+                </fieldset>                               
+            </div> 
         </div>
     </div>
     
@@ -255,84 +264,40 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtNombreContacto">Name</label>
-                    <input type="text" class="form-control" id="txtNombreContacto" name="txtNombreContacto" />
+                    <label for="txtName">Name</label>
+                    <input type="text" class="form-control" id="txtName" name="txtName" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtExtensionContacto">Extension</label>
-                    <input type="text" class="form-control" id="txtExtensionContacto" name="txtExtensionContacto" />
+                    <label for="txtExtension">Extension</label>
+                    <input type="text" class="form-control" id="txtExtension" name="txtExtension" />
                 </fieldset>                    
             </div>
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCargoContacto">Job position</label>
-                    <input type="text" class="form-control" id="txtCargoContacto" name="txtCargoContacto" />
+                    <label for="txtJobPosition">Job position</label>
+                    <input type="text" class="form-control" id="txtJobPosition" name="txtJobPosition" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCelularContacto">Mobile</label>
-                    <input type="text" class="form-control" id="txtCelularContacto" name="txtCelularContacto" />
+                    <label for="txtMobile">Mobile</label>
+                    <input type="text" class="form-control" id="txtMobile" name="txtMobile" placeholder="+1-212-324-4152"/>
                 </fieldset>                    
             </div>      
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtTelefonoContacto">Phone</label>
-                    <input type="text" class="form-control" id="txtTelefonoContacto" name="txtTelefonoContacto" />
+                    <label for="txtPhone">Phone</label>
+                    <input type="text" class="form-control" id="txtPhone" name="txtPhone" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCorreoContacto">E-mail</label>
-                    <input type="text" class="form-control" id="txtCorreoContacto" name="txtCorreoContacto" />
+                    <label for="txtEmail">E-mail</label>
+                    <input type="text" class="form-control" id="txtEmail" name="txtEmail" />
                 </fieldset>                    
             </div>     
         </div>
     </div>
-
-    <%--<div class="panel panel-primary">
-        <div class="panel-heading">Condición de compra</div>
-        <div class="panel-body">
-            <div class="row">
-                <fieldset class="form-group col-md-1">
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtCondicionPagoCompra">Condiciones de pago</label>
-                    <input type="text" class="form-control" id="txtCondicionPagoCompra" name="txtCondicionPagoCompra" />
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtCondicionEntregaCompra">Condiciones de entrega</label>
-                    <input type="text" class="form-control" id="txtCondicionEntregaCompra" name="txtCondicionEntregaCompra" />
-                </fieldset>                    
-            </div>
-            <div class="row">
-                <fieldset class="form-group col-md-1">
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtModoEntregaCompra">Modo de entrega</label>
-                    <input type="text" class="form-control" id="txtModoEntregaCompra" name="txtModoEntregaCompra" />
-                </fieldset>                   
-            </div>
-        </div>
-    </div>--%>
-
-    <%--<div class="panel panel-primary">
-        <div class="panel-heading">Datos bancarios</div>
-        <div class="panel-body">
-            <div class="row">
-                <fieldset class="form-group col-md-1">
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtBanco">Banco</label>
-                    <input type="text" class="form-control" id="txtBanco" name="txtBanco" />
-                </fieldset>
-                <fieldset class="form-group col-md-5">
-                    <label for="txtNumCuentaBanco">N° cuenta corriente</label>
-                    <input type="text" class="form-control" id="txtNumCuentaBanco" name="txtNumCuentaBanco" />
-                </fieldset>                    
-            </div>            
-        </div>
-    </div>--%>
 
     <div class="panel panel-primary">
         <div class="panel-heading">Required documents to send</div>
@@ -341,36 +306,44 @@
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCedulaRepresentante">Business registration certificate</label>
-                    <input type="file" class="form-control" id="txtCedulaRepresentante" name="txtCedulaRepresentante" />
+                    <label for="txtBusinessCertificate">Business registration certificate</label>
+                    <input type="file" class="form-control" id="txtBusinessCertificate" name="txtBusinessCertificate" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtRutEmpresaProveedora">Bank certificate form issued by your bank. This should indicate Tax ID and company legal name</label>
-                    <input type="file" class="form-control" id="txtRutEmpresaProveedora" name="txtRutEmpresaProveedora" />
+                    <label for="txtBankCertificate">Bank certificate form issued by your bank. This should indicate Tax ID and company legal name</label>
+                    <input type="file" class="form-control" id="txtBankCertificate" name="txtBankCertificate" />
                 </fieldset>                    
             </div>
             <div class="row">
                 <fieldset class="form-group col-md-1">
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtCertificadoCuenta">Dun & bradsteet or equivalent</label>
-                    <input type="file" class="form-control" id="txtCertificadoCuenta" name="txtCertificadoCuenta" />
+                    <label for="txtDubAndBradseet">Dun & bradsteet or equivalent</label>
+                    <input type="file" class="form-control" id="txtDubAndBradseet" name="txtDubAndBradseet" />
                 </fieldset>
                 <fieldset class="form-group col-md-5">
-                    <label for="txtEscrituraEmpresa">Tax ID copy</label>
-                    <input type="file" class="form-control" id="txtEscrituraEmpresa" name="txtEscrituraEmpresa" />
+                    <label for="txtTaxIdCopy">Tax ID copy</label>
+                    <input type="file" class="form-control" id="txtTaxIdCopy" name="txtTaxIdCopy" />
                 </fieldset>                    
             </div>
         </div>
     </div>
 
-        <div class="panel-body" style="text-align:center">           
-            <fieldset class="form-group col-md-12">
-                <div class="row">
-                    <button type="button" class="btn btn-primary btn-lg" id="btnEnviar">Send</button>                 
-                </div>
-            </fieldset> 
-        </div>
+    <div class="panel-body" style="text-align:right">           
+        <fieldset class="form-group col-md-12">
+            <div class="row">
+                <label>If any doubt please contact: compraslogistica.chi@hdlao.com</label>               
+            </div>
+        </fieldset> 
+    </div>
+
+    <div class="panel-body" style="text-align:center">           
+        <fieldset class="form-group col-md-12">
+            <div class="row">
+                <button type="button" class="btn btn-primary btn-lg" id="btnEnviar">Send</button>                 
+            </div>
+        </fieldset> 
+    </div>
 
 </form>
 

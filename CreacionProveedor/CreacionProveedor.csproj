@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Base32.Net4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\Base32.Net4.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
@@ -231,6 +235,9 @@
     <Content Include="Styles\css\bootstrap-toggle.min.css" />
     <Content Include="Styles\css\jquery-ui.css" />
     <Content Include="Styles\css\newdatatables.min.css" />
+    <Content Include="Styles\image\logo.png" />
+    <Content Include="Styles\image\reloj.png" />
+    <Content Include="Styles\image\vistobueno.png" />
     <Content Include="Styles\js\bootstrap-combobox.js" />
     <Content Include="Styles\css\bootstrap-theme.css" />
     <Content Include="Styles\css\bootstrap-theme.min.css" />
